@@ -1,8 +1,22 @@
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import java.io.*;
 import java.util.*;
 
+/*
+    This problem is to keep track of all possible positions that each cow can reach after cycles of swaps and print out
+the number of positions that each cow has been to.
+
+Challenges:
+    1. Understand the problem
+         The cows go into cycles and cycles of swaps, and you need to have a sense of after how long the cows will go
+    back to its original position.
+         Or you can keep track of each cow individually, which requires a fewer data structures.
+    2. Data Structures
+         If you are keeping track of all cows at one time, then you will need data structures like ArrayLists and
+    HashSet.
+         If you choose to keep track of the cows, you will need only arrays (and HashSet, which can make the process a
+    lot easier).
+
+ */
 public class Main {
 
     public static void main(String[] args) throws IOException {

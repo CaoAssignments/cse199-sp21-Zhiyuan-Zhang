@@ -1,9 +1,19 @@
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.Arrays;
-import java.util.StringTokenizer;
+import java.io.*;
+import java.util.*;
 
+/*
+    This problem is trying find the minimum of steps to brush the fence where you can brush a stroke as long as possible,
+and can only cover the lighter colors with darker ones.
+
+Challenges:
+    1. Understand the problem
+         It is pretty simple problem overall.
+    2. Data Structure
+         The simplest way to solve this problem is to utilize the data structure Stack, in which you push a color if it
+      is darker than the previous color, pop it if it is lighter until the color on top of the stack is lighter or the
+      stack is empty then push it onto the stack. (If the color on top of the stack is the same, then do not push.) Keep
+      track of all the number of pushes which is the result to this problem.
+ */
 public class Main{
 
     public static void main(String[] args) throws IOException {
